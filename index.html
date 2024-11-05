@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade JS</title>
+    <meta name="author" content="Bruna Domingos Hoffmann">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="form">
+            <h1>Formulário</h1>
+            <div id="aNome">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome">
+            </div>
+            <div id="aEndereco">
+                <label for="endereco">Endereço: </label>
+                <input type="text" id="endereco">
+            </div>
+            <div id="aCep">
+                <label for="cep">CEP: </label>
+                <input type="text" id="cep" maxlength="10" placeholder="00.000-000">
+            </div>
+            <div id="aCpf">
+                <label for="cpf">CPF: </label>
+                <input type="text" id="cpf" maxlength="14"  placeholder="000.000.000-00">
+            </div>
+            <div id="aTelefone">
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" maxlength="16" oninput="mascTelefone()" placeholder="(00) 0 0000-0000">
+            </div>
+            <div id="aCnpj">
+                <label for="cnpj">CNPJ: </label>
+                <input type="text" id="cnpj" oninput="mascCnpj()" maxlength="18" placeholder="00.000.000/0001-00">
+            </div>
+            <div id="aCodigo">
+                <label for="codigo">Código: </label>
+                <input type="text" id="codigo">
+            </div>
+            <div id="aBotao">
+                <a href="pag2.html"><input type="button" value="Click" onclick="enivarDados()"></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
